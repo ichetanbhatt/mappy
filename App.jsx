@@ -78,7 +78,7 @@ class App extends React.Component {
 		  {
 		    position: origin,
 				map: this.map,
-				// icon: 'https://raw.githubusercontent.com/xxihawkxx/PocketMe/master/img/icon256.png'
+				icon: 'https://raw.githubusercontent.com/xxihawkxx/mappy/master/car.png'
 		  });
 		  var length = route.length;
       var i=0;
