@@ -78,8 +78,8 @@ class App extends React.Component {
 		  {
 		    position: origin,
 				map: this.map,
-				icon: 'https://raw.githubusercontent.com/xxihawkxx/mappy/master/car.png'
-		  });
+				icon: 'https://raw.githubusercontent.com/xxihawkxx/mappy/master/markers/car.png'
+			});
 		  var length = route.length;
       var i=0;
     	var driveTimer = setInterval(function () {
@@ -88,7 +88,7 @@ class App extends React.Component {
         if(i==length){
         	clearInterval(driveTimer);
         }
-      },10);
+			},25);
 		}
   	render() {
 	    return(
@@ -127,10 +127,8 @@ class App extends React.Component {
 
 	  createMap() {
 	    let mapOptions = {
-				zoom: 9,
-				center:  {lat:28.590018, lng:77.115197}
-				
-				
+				zoom: 8,
+				center:  {lat:27.564289, lng:77.293102}				
 	    }
 	    return new google.maps.Map(this.refs.renderMap, mapOptions)
 	  }

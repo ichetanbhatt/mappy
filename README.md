@@ -20,3 +20,4 @@ A React based webapp which uses 'Google Maps Api' to render the movement of diff
 * ```OVER_QUERY_LIMIT```: json was huge and it was throwing this error as too many queries were being made. So to fix this, a delay function have been added.
 * ```ZERO_RESULTS```: some json enteries were not valid so a security check has been edded to log 'Wrong Data' everytime they occurs.
 * ```setPosition: not a LatLng or LatLngLiteral: not an Object``` still presists as LatLng are not provided in numeric form.
+* As zoom orientation was getting changed on every new animation addition on map. It is disabled using ```{ preserveViewport: true }``` 
