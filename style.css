@@ -1,0 +1,12 @@
+html,
+body,
+.Map {
+  height: 920px;
+  position: fixed;
+  width: 100%;
+}
+.renderMap {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
